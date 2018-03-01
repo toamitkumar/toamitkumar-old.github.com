@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0" xmlns:media="http://search.yahoo.com/mrss"><channel><title><![CDATA[toamitkumar's Code Blog]]></title><description><![CDATA[Opinions expressed here are my own and do not reflect those of my employer.]]></description><link>https://toamitkumar.com/</link><image><url>https://toamitkumar.com/favicon.png</url><title>toamitkumar&apos;s Code Blog</title><link>https://toamitkumar.com/</link></image><generator>Ghost 1.20</generator><lastBuildDate>Thu, 01 Mar 2018 16:19:47 GMT</lastBuildDate><atom:link href="https://toamitkumar.com/rss" rel="self" type="application/rss+xml"/><ttl>60</ttl><item><title><![CDATA[My First Impression at #inspect2013 - RubyMotion Conference]]></title><description><![CDATA[<div class="kg-card-markdown"><p>The first RubyMotion Conference <a href="http://www.rubymotion.com/conference/#schedule">#inspect2013</a> happened in Brussels, Belgium. It was a very well <a href="http://eventifier.co/event/inspect13/">organized conference</a>, lots of talented people, awesome speakers, good food and yes ‘Belgian Beer’</p>
+<p><img src="https://toamitkumar.com/content/images/2018/02/one_man_army.png" alt="one_man_army"></p>
+<p>Many thanks to Laurent Sansonetti (<a href="https://twitter.com/lrz">@lrz</a>) for organizing the first RM conference.</p>
+<p>The general <a href="https://gist.github.com/ryansobol/5276501">gist</a> of what happened there. Below are my</p></div>]]></description><link>https://toamitkumar.com/2013/04/09/my-first-impression-at-inspect2013-rubymotion-conference/</link><guid isPermaLink="false">5a76e1538f4cf0346625e985</guid><category><![CDATA[ruby]]></category><category><![CDATA[rubygems]]></category><category><![CDATA[rubymotion]]></category><category><![CDATA[rubymotion-coference]]></category><category><![CDATA[inspect2013]]></category><dc:creator><![CDATA[Amit Kumar]]></dc:creator><pubDate>Tue, 09 Apr 2013 10:32:00 GMT</pubDate><content:encoded><![CDATA[<div class="kg-card-markdown"><p>The first RubyMotion Conference <a href="http://www.rubymotion.com/conference/#schedule">#inspect2013</a> happened in Brussels, Belgium. It was a very well <a href="http://eventifier.co/event/inspect13/">organized conference</a>, lots of talented people, awesome speakers, good food and yes ‘Belgian Beer’</p>
+<p><img src="https://toamitkumar.com/content/images/2018/02/one_man_army.png" alt="one_man_army"></p>
+<p>Many thanks to Laurent Sansonetti (<a href="https://twitter.com/lrz">@lrz</a>) for organizing the first RM conference.</p>
+<p>The general <a href="https://gist.github.com/ryansobol/5276501">gist</a> of what happened there. Below are my observations and opinions.</p>
+<h3 id="whatisawatinspect2013rubymotionconference">What I saw at #inspect2013 - RubyMotion conference?</h3>
+<p>For people who don’t know about RubyMotion:</p>
+<pre><code>- http://www.rubymotion.com/developer-center/
+- http://rubysource.com/laurent-sansonetti-on-rubymotion-internals/
+- http://motioncasts.tv/
+- vimeo.com/61255647
+</code></pre>
+<h3 id="observationsopinions">Observations/Opinions:</h3>
+<h4 id="thecommunity">The Community:</h4>
+<p>Community plays a very important role in the success of Open Source Software. Even though RM is licensed, it has blessings from Ruby Community.</p>
+<p>Rubyists (including me) who have tried Obj-C in the past have found it verbose and complex. We all embraced RubyMotion because of its simplicity and more important being a developer friendly language - Ruby.</p>
+<p>At the conference I saw a lot of seasoned Obj-C developers who had tried RM and loved it. Now, they are using it for full fledged production applications. One of the big reason for this is Cocoa-Pods. They can still use their legacy Obj-C code / project in new a RM application. The build system takes care of linking and tying them during compilation. No need to re-invent the wheel, utilize the investment people have already done in iOS world. This is an interesting phenomenon because this is going to push the toolchain to next level.</p>
+<h4 id="contribution">Contribution:</h4>
+<p>It is less than a year and the RM community has grown exponentially from few rubyists to thousands of iOS developers. There has been tremendous contribution by people to build ruby-motion gems/libraries/wrappers around verbose Obj-C code.The list is very big but I should definitely mention: rubymotion-wrappers.com</p>
+<p>A lot of talks at the conference were about these libraries and wrappers.</p>
+<h4 id="focusontesting">Focus on testing:</h4>
+<p>Ruby Community has successfully induced the importance of testing the code. Though RM comes bundled with a testing framework, its hard to do UI testing on iOS and Obj-C has suffered a lot because of this.</p>
+<p>At the same time, it is unusual that Rubyists would not explore options to test their code on iOS platform.</p>
+<p>In the conference I got to learn some awesome frameworks out of which ‘motion-calabash’ is really good. It gives you BDD style testing similar to what we are familiar in Ruby/Rails world - Cucumber.</p>
+<p>You should definitely checkout <a href="https://github.com/calabash/motion-calabash">https://github.com/calabash/motion-calabash</a> . <a href="http://github.com/krukow/motion-calabash-inspect2013">A sample app</a></p>
+<p><code>The one thing I would like to explore is the possibility to test my HTML5 phone-gaped application using 'motion-calabash'.</code></p>
+<p>When I am developing for mobile platform I miss Chrome Developer Tools a lot. Not any more. It blew my mind to see the demo by Colin Gray (@colinta). Motion-Xray: An iOS Inspector that runs inside your app, so you can debug and analyze from your device in real-world situations. It is amazing, go <a href="https://github.com/colinta/motion-xray">check it out</a></p>
+<h4 id="broaderreach">Broader Reach:</h4>
+<p>I was completely stunned to see presentation in a technological event by a visually impaired (I don’t mean to hurt anyone. I had never seen such a thing happening and it was a complete jaw-drop for me). Let me introduce Austin Seraphin (<a href="http://behindthecurtain.us/about/">http://behindthecurtain.us/about/</a>) . He is an iOS developer and iOS Accessibility Expert. He explains how iPhone and Accessibility changed his life. A completely new perspective. His <a href="http://www.slideshare.net/AdrianoMartino/ruby-motion-andiosaccessibility">slides</a> if you are interested - I would urge to have a look at them.</p>
+<h4 id="trendandmyreaction">Trend and My Reaction:</h4>
+<p>Laurent was the last to present at the conference - a noble decision I would say. He talked about roadmap and the future of RubyMotion. I see a focus shift to make the toolchain more developer friendly.</p>
+<h5 id="somehighlights">Some highlights:</h5>
+<ul>
+<li><strong>High-level debugging support</strong>: right now it uses GDB technology which is pretty low-level.</li>
+<li><strong>Documentation</strong>: add more documentation to make it easier for newbies.</li>
+</ul>
+<p>I definitely feel RM is going to change the way we are used-to doing native iOS development. So, don’t delay, hack and be awesome.</p>
+<p>Finally, here is the presentation (Building Interactive Data Visualization Charts) <a href="http://lanyrd.com/2013/inspect/">@rubymotion</a> conference:</p>
+<script async class="speakerdeck-embed" data-id="092999908275013006b522000a9f03fa" data-ratio="1.2994923857868" src="//speakerdeck.com/assets/embed.js">
+</script>
+<p>Please share your thoughts.</p>
+<p>Enjoy !</p>
+</div>]]></content:encoded></item><item><title><![CDATA[Ruby Confrerence'13 - Australia]]></title><description><![CDATA[<div class="kg-card-markdown"><script async class="speakerdeck-embed" data-id="f6dab0105f6a013056301231381ff75d" data-ratio="1.2994923857868" src="//speakerdeck.com/assets/embed.js">
+</script>
+<p>
+    <a href="https://vimeo.com/61255647">Amit Kumar - Using Ruby for iOS development (RubyMotion)</a> from <a href="https://vimeo.com/rubyau">Ruby Australia</a> on <a href="https://vimeo.com">Vimeo</a>.
+</p>
+<iframe src="https://player.vimeo.com/video/61255647" width="640" height="360" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen>
+</iframe>
+</div>]]></description><link>https://toamitkumar.com/2013/03/16/ruby-confrerence13-australia/</link><guid isPermaLink="false">5a76e32d8f4cf0346625e98e</guid><category><![CDATA[ruby]]></category><category><![CDATA[ruby-ios]]></category><category><![CDATA[ruby-osx]]></category><category><![CDATA[rubymotion]]></category><category><![CDATA[ruby-conf-au]]></category><category><![CDATA[ruby-conf-2013]]></category><dc:creator><![CDATA[Amit Kumar]]></dc:creator><pubDate>Sat, 16 Mar 2013 10:40:00 GMT</pubDate><content:encoded><![CDATA[<div class="kg-card-markdown"><script async class="speakerdeck-embed" data-id="f6dab0105f6a013056301231381ff75d" data-ratio="1.2994923857868" src="//speakerdeck.com/assets/embed.js">
+</script>
+<p>
+    <a href="https://vimeo.com/61255647">Amit Kumar - Using Ruby for iOS development (RubyMotion)</a> from <a href="https://vimeo.com/rubyau">Ruby Australia</a> on <a href="https://vimeo.com">Vimeo</a>.
+</p>
+<iframe src="https://player.vimeo.com/video/61255647" width="640" height="360" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen>
+</iframe>
+</div>]]></content:encoded></item><item><title><![CDATA[Goldengate Ruby Conference 2012 (GoGaRuCo-2012)]]></title><description><![CDATA[<div class="kg-card-markdown"><h3 id="rubymotionrubyizingiosdevelopment">RubyMotion: Rubyizing iOS development</h3>
+<script async class="speakerdeck-embed" data-id="5055d69cb4dbee000204e4fc" data-ratio="1.2994923857868" src="//speakerdeck.com/assets/embed.js">
+</script>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/7v3LhtNZEcM" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen>
+</iframe></div>]]></description><link>https://toamitkumar.com/2012/10/02/goldengate-ruby-conference-2013/</link><guid isPermaLink="false">5a76e3f28f4cf0346625e999</guid><category><![CDATA[ruby]]></category><category><![CDATA[rubymotion]]></category><category><![CDATA[ruby-conf-san-francisco]]></category><category><![CDATA[gogaruco-2012]]></category><dc:creator><![CDATA[Amit Kumar]]></dc:creator><pubDate>Tue, 02 Oct 2012 10:44:00 GMT</pubDate><content:encoded><![CDATA[<div class="kg-card-markdown"><h3 id="rubymotionrubyizingiosdevelopment">RubyMotion: Rubyizing iOS development</h3>
+<script async class="speakerdeck-embed" data-id="5055d69cb4dbee000204e4fc" data-ratio="1.2994923857868" src="//speakerdeck.com/assets/embed.js">
+</script>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/7v3LhtNZEcM" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen>
+</iframe></div>]]></content:encoded></item><item><title><![CDATA[Using SSH keys across multiple github sites]]></title><description><![CDATA[<div class="kg-card-markdown"><p>Adding the <a href="https://help.github.com/articles/generating-ssh-keys">SSH keys</a> on your github site is the simple solution. I am using 3 github sites; - 1 external - 2 behind the firewall</p>
+<p>Each have their different email address for security reasons.</p>
+<p>So, quite often, I get this error - if I mess up things. I was</p></div>]]></description><link>https://toamitkumar.com/2012/08/05/using-multiple/</link><guid isPermaLink="false">5a76dff78f4cf0346625e97f</guid><category><![CDATA[github]]></category><category><![CDATA[ssh-keys]]></category><category><![CDATA[behind-firewall]]></category><dc:creator><![CDATA[Amit Kumar]]></dc:creator><pubDate>Sun, 05 Aug 2012 10:27:00 GMT</pubDate><content:encoded><![CDATA[<div class="kg-card-markdown"><p>Adding the <a href="https://help.github.com/articles/generating-ssh-keys">SSH keys</a> on your github site is the simple solution. I am using 3 github sites; - 1 external - 2 behind the firewall</p>
+<p>Each have their different email address for security reasons.</p>
+<p>So, quite often, I get this error - if I mess up things. I was looking for a solution so that you can create a public rsa file for each github site.</p>
+<p>The solution was to create <code>config</code> inside <code>~/.ssh</code> directory.</p>
+<p>The file:</p>
+<pre><code>Host 
+  User git
+  Port 22
+  Hostname github-site1.com
+  IdentityFile ~/.ssh/github_site1_id_rsa
+  TCPKeepAlive yes
+  IdentitiesOnly yes
+  Hostname github-site2.com
+  IdentityFile ~/.ssh/github_site2_id_rsa
+  Hostname github-site3.com
+  IdentityFile ~/.ssh/github_site3_id_rsa
+</code></pre>
+<p>Bingo !!</p>
+<p>I am sure there are other better ways to solve this problem.</p>
+<p>I would appreciate comments.</p>
+</div>]]></content:encoded></item><item><title><![CDATA[Agility and Component Driven Development]]></title><description><![CDATA[<div class="kg-card-markdown"><p>Agile development has become the backbone of modern software development process. In a nutshell, it can be defined as - <strong>iterative, self-evolving incremental development that demands high collaboration and flexibility to change</strong>. Component driven development on the other hand augments to building reusable and testable components that be plugged together</p></div>]]></description><link>https://toamitkumar.com/2012/05/30/agility-and-component-driven-development/</link><guid isPermaLink="false">5a76ddfd8f4cf0346625e974</guid><category><![CDATA[agile]]></category><category><![CDATA[agile-development]]></category><category><![CDATA[component-driven-development]]></category><category><![CDATA[iterative]]></category><category><![CDATA[prototying]]></category><dc:creator><![CDATA[Amit Kumar]]></dc:creator><pubDate>Wed, 30 May 2012 10:18:00 GMT</pubDate><content:encoded><![CDATA[<div class="kg-card-markdown"><p>Agile development has become the backbone of modern software development process. In a nutshell, it can be defined as - <strong>iterative, self-evolving incremental development that demands high collaboration and flexibility to change</strong>. Component driven development on the other hand augments to building reusable and testable components that be plugged together to form application foundation for delivering business functionality.</p>
+<p>In our current engagement with Firm Account, they have started providing IT tools/solutions to their clients supplementing the strategic solutions they have been providing so far. They wanted to deliver the solution with rapid-prototyping and rapid-delivery.</p>
+<hr>
+<h3 id="challenges">Challenges</h3>
+<p>The challenge was to deliver the solution in quick 2-3 months iterative cycles. The working software was to be delivered and handed over to IT department of the client. This meant the software has to be of high quality and maintainable with least amount of support</p>
+<hr>
+<h3 id="approach">Approach</h3>
+<p>Each application we were building had certain common components. For eg:</p>
+<pre><code>- Authentication 
+- Work flow process
+- Data upload process
+- Data crunching and cleansing 
+- Data export
+- User Management with corporate level security
+- Background processing for data manipulation
+- etc.
+</code></pre>
+<p>This problem can be easily solved with Service Oriented Design Pattern. But since most of the deliverables were ‘leave behind’, we started to observe an evolving pattern of Component Driven Development. There was two approach to establish a pool of commonly required components.</p>
+<blockquote>
+<ol>
+<li>Staff a team that is responsible for building common components</li>
+<li>'Tax' teams to contribute 'components', if they use any from the components library.</li>
+</ol>
+</blockquote>
+<p>The first seems more common but does not align with the paradigm of Agile Software Development. One team should not be responsible for building and maintaining the software. Over time this leads to quality compromises and delays in deliverables.</p>
+<p>Extracting common components from existing applications and taxing teams (who want to use from pool) to contribute to common pool did the magic. Initially leap was a little difficult. It took sometime for us to institutionalize the mind-set of building component -based software that can be contributed back to pool. Once the team was adept with this working process, the pool expanded and became rich.</p>
+<hr>
+<h3 id="impactandbenefits">Impact and Benefits</h3>
+<ul>
+<li><strong>Redundant work, development time</strong>: Developing every system from scratch means redundant development of many of these re-usable components. These can be shared shared across multiple applications reducing development time.</li>
+<li><strong>Time to market</strong>: Each application goes through rigorous process of QA and Security Assurance. This meant a lot of time was wasted testing the components that can be built and tested once. Using re-usable components reduced the time to market by ~40%.</li>
+<li><strong>Expertise sharing</strong>: Software reuse supports the sharing of knowledge naturally. This helps in learning from peers and improves the quality of deliverables</li>
+<li><strong>Focus on solving the actual business problem</strong>: Teams can focus on solving the business problem rather than spending time building the components that are common</li>
+<li><strong>Rapid prototyping support</strong>: Reusable components can provide an effective basis for quickly building a prototype of a software system. This provides the opportunity to get customer feedback early in the life cycle, thus supporting the conception of requirements.</li>
+<li><strong>Maintenance costs</strong>: Fewer defects can occur when proven components have been used, and less of the software system must be maintained.</li>
+<li><strong>High quality</strong>: Error fixes occur from reuse to reuse. This yields higher quality for a reused component that would be the case for a component that is developed and used only once.</li>
+</ul>
+<p>What do you think ?</p>
+</div>]]></content:encoded></item><item><title><![CDATA[Migrate From Blogger to Octopress: Step-by-Step Guide]]></title><description><![CDATA[<div class="kg-card-markdown"><p>After procastinating for quite sometime, I finally decided to migrate from blogger to Octopress using Jeklly and likes. In this post, I have tried to compile the steps in detail.</p>
+<h3 id="exportxmlfromblogger">Export xml from blogger</h3>
+<p>Go to settings page of your blogger and click the “Export blog”, link as shown in</p></div>]]></description><link>https://toamitkumar.com/2012/04/19/migrate-from-blogger-to-octopress-step-by-step-guide/</link><guid isPermaLink="false">5a76da538f4cf0346625e96d</guid><category><![CDATA[octopress]]></category><category><![CDATA[blog-posts]]></category><category><![CDATA[migrate-from-blogger-octopress]]></category><dc:creator><![CDATA[Amit Kumar]]></dc:creator><pubDate>Thu, 19 Apr 2012 10:02:00 GMT</pubDate><content:encoded><![CDATA[<div class="kg-card-markdown"><p>After procastinating for quite sometime, I finally decided to migrate from blogger to Octopress using Jeklly and likes. In this post, I have tried to compile the steps in detail.</p>
+<h3 id="exportxmlfromblogger">Export xml from blogger</h3>
+<p>Go to settings page of your blogger and click the “Export blog”, link as shown in the image below.</p>
+<p><img src="https://toamitkumar.com/content/images/2018/02/blogger_1.png" alt="blogger_1"></p>
+<p>This will open a modal pop-up window. Click on the “Download blog” button to download an xml output of all your posts.</p>
+<p><img src="https://toamitkumar.com/content/images/2018/02/blogger_2.png" alt="blogger_2"></p>
+<p>In the next section, we will see how to convert the xml into htmls by a running a ruby script. (Note: You should have ruby installed on your machine to run this script). Run <code>gem install nokogiri</code> to install ruby xml parser.</p>
+<hr>
+<h3 id="runthescripttocreatemarkdownfiles">Run the script to create markdown files</h3>
+<p>Run the script below: <code>ruby blogger_import.rb downloaded_blogger.xml</code></p>
+<script src="https://gist.github.com/toamitkumar/2515713.js">
+</script>
+<p>This will generate <code>_posts</code> and <code>_drafts</code> directories with all relevant posts in html format.</p>
+<p><img src="https://toamitkumar.com/content/images/2018/02/import_1.png" alt="import_1"></p>
+<hr>
+<h3 id="installconfigureoctopress">Install &amp; Configure Octopress</h3>
+<p>Follow the step by step guide <a href="http://octopress.org/docs/setup/">here</a> to setup octopress on your local. I have used github pages to deploy the Octopress blog but there are other <a href="http://octopress.org/docs/deploying/">options</a> as well. Alsobe sure to check the <a href="http://octopress.org/docs/configuring/">blog confirguration</a> section.</p>
+<hr>
+<h3 id="integrateplugins">Integrate plugins</h3>
+<p>Octopress has options to integrate with 3rd party plugins like:</p>
+<ul>
+<li>Disqus</li>
+<li>Github</li>
+<li>Twitter</li>
+</ul>
+<p>Sample <code>_config.yml</code> file which I used in this blog setup.</p>
+<script src="https://gist.github.com/toamitkumar/2516213.js">
+</script>
+<hr>
+<h3 id="customizingandtheming">Customizing and Theming</h3>
+<p>The <a href="http://octopress.org/docs/theme/template/">link</a> gives details of customizing the navigation bar, color schemes etc. There are few <a href="https://github.com/imathis/octopress/wiki/List-Of-Octopress-Themes">themes</a> which can be used to change the aesthetics of the page and layout.</p>
+<hr>
+<h3 id="flauntyourachievementbadgesfromcoderwall">Flaunt your achievement badges from coderwall</h3>
+<p><a href="http://coderwall.com/">Coderwall</a> is the online reputation system for developers. It exposes a simple JSON representation of every profile. The api can used to show off ‘achievemnt badges’.</p>
+<p>Add the below script to <code>source/_includes/asides/coderwall.html</code> and add <code>asides/coderwall.html</code> to your <code>default_asides</code> array in <code>_config.yml</code> file.</p>
+<script src="https://gist.github.com/toamitkumar/2516466.js">
+</script>
+<p>Make sure you also add:</p>
+<pre><code>coderwall_user:
+coderwall_endorse_me: true
+</code></pre>
+<p>This will also add <code>endorse me</code> link to your blog as shown below:</p>
+<p><img src="https://toamitkumar.com/content/images/2018/02/coderwall.png" alt="coderwall"></p>
+<hr>
+<h3 id="setredirectionfrombloggertonewoctopressblog">Set re-direction from blogger to new Octopress blog</h3>
+<p>Follow the steps below to setup re-direct from blogger to this new site.</p>
+<ul>
+<li>Design -&gt; Layout -&gt; Edit HTML</li>
+<li>Find <code>&lt;head&gt;</code> tag</li>
+<li>Add the following line below the <code>&lt;head&gt;</code> tag as below:<br>
+<code>&lt;meta http-equiv=&quot;refresh&quot; content=&quot;0;url=http://url_of_your_new_site.com&quot;/&gt;</code></li>
+<li>Save the file</li>
+</ul>
+<p>You are done, blogger will redirect to your new site.</p>
+<p>Thats it !!</p>
+<p>Hope this helps in setting your blog site using Octopress.</p>
+</div>]]></content:encoded></item><item><title><![CDATA[File Download progress bar in Browser]]></title><description><![CDATA[<div class="kg-card-markdown"><p>For last few days I have been struggling with a requirement to show file download progress bar. Here’s the requirement.</p>
+<p>Web page has a link <em>Download File</em>. On click of this link - a JSON post request is sent to the server. The server generates the files based on</p></div>]]></description><link>https://toamitkumar.com/2012/03/11/file-download-indicator-in-browser/</link><guid isPermaLink="false">5a76d77a8f4cf0346625e964</guid><category><![CDATA[rubyonrails]]></category><category><![CDATA[javascript]]></category><category><![CDATA[iframe]]></category><category><![CDATA[file-download-progress-bar]]></category><category><![CDATA[user-experience]]></category><dc:creator><![CDATA[Amit Kumar]]></dc:creator><pubDate>Sun, 11 Mar 2012 09:50:00 GMT</pubDate><content:encoded><![CDATA[<div class="kg-card-markdown"><p>For last few days I have been struggling with a requirement to show file download progress bar. Here’s the requirement.</p>
+<p>Web page has a link <em>Download File</em>. On click of this link - a JSON post request is sent to the server. The server generates the files based on the JSON input and streams back with <em>Content-Disposition</em> “<em>attachment</em>” for the browser to download. There are several ways to visually indicate the click of the link:</p>
+<ul>
+<li>
+<p><strong>Normal form post</strong>: Create a dynamic form and post it. On the server-side make sure content disposition is set to attachment. When browser receives the response, it pops the <em><strong>Open-Save-Cancel</strong></em> dialogue box.</p>
+<h4 id="cons">Cons:</h4>
+<ul>
+<li>No control of the page response time, page dies in case of timeouts</li>
+<li>Page refreshes and the current context of the user is lost</li>
+</ul>
+</li>
+<li>
+<p><strong>Ajax post</strong>: Do an Ajax form post with JSON data. Download “waiting” indicator can be easily initiated with ”Ajax prefilter”. In the response from the server send back the URL to download. Remove the “waiting” indicator. Change the window location to the URL and let the browser do the rest.</p>
+<h4 id="cons">Cons:</h4>
+<ul>
+<li>Retain the file on the server and run a background cleanup</li>
+</ul>
+</li>
+<li>
+<p><strong>Iframe post (Recommended)</strong>: Create a dynamic form and post (target of the form) it to an iframe. Disable the download link, show the “waiting” indicator. Start the timer and look for presence of a cookie. If the cookie is found, remove the indicator and enable the link. This requires some server side code as well: adding the cookie. The detailed sample code:</p>
+<h4 id="cons">Cons:</h4>
+<ul>
+<li>Server has to set an extra cookie</li>
+</ul>
+</li>
+</ul>
+<script src="https://gist.github.com/toamitkumar/2018764.js">
+</script>
+<p><strong>Corresponding client side code:</strong></p>
+<script src="https://gist.github.com/toamitkumar/2018773.js">
+</script>
+<p><strong>And the server side code:</strong></p>
+<script src="https://gist.github.com/toamitkumar/2018815.js">
+</script>
+</div>]]></content:encoded></item><item><title><![CDATA[Invalid Gemspec in” and 'Illformed Requirement']]></title><description><![CDATA[<div class="kg-card-markdown"><p>If you ever come across this problem, follow instructions below to resolve them:</p>
+<script src="https://gist.github.com/toamitkumar/1648360.js">
+</script></div>]]></description><link>https://toamitkumar.com/2012/01/20/invalid-gemspec-in-and-illformed-requirement/</link><guid isPermaLink="false">5a75ba1a8f4cf0346625e95b</guid><category><![CDATA[ruby]]></category><category><![CDATA[rubygems]]></category><category><![CDATA[gemspec]]></category><dc:creator><![CDATA[Amit Kumar]]></dc:creator><pubDate>Fri, 20 Jan 2012 13:33:00 GMT</pubDate><content:encoded><![CDATA[<div class="kg-card-markdown"><p>If you ever come across this problem, follow instructions below to resolve them:</p>
+<script src="https://gist.github.com/toamitkumar/1648360.js">
+</script></div>]]></content:encoded></item><item><title><![CDATA[RSpec::Core::Configuration::MustBeConfiguredBeforeExampleGroupsError]]></title><description><![CDATA[<div class="kg-card-markdown"><p><mark>Came across this weird error:</mark></p>
+<script src="https://gist.github.com/toamitkumar/1406558.js">
+</script>
+<p>This had happened because I had RSpec 1 way of including spec_helper (in old files):</p>
+<p><code>require File.expand_path(File.dirname(__FILE__) + ‘/../spec_helper’)</code></p>
+<p>And the other way (in my new files):</p>
+<p><code>require ‘spec_helper’</code></p>
+<p>Synching them fixed it :))</p>
+</div>]]></description><link>https://toamitkumar.com/2011/11/29/rspec-core-configuration-mustbeconfiguredbeforeexamplegroupserror/</link><guid isPermaLink="false">5a75b9438f4cf0346625e954</guid><category><![CDATA[ruby]]></category><category><![CDATA[rspec]]></category><category><![CDATA[rspec-core]]></category><category><![CDATA[error-handling]]></category><dc:creator><![CDATA[Amit Kumar]]></dc:creator><pubDate>Tue, 29 Nov 2011 13:29:00 GMT</pubDate><content:encoded><![CDATA[<div class="kg-card-markdown"><p><mark>Came across this weird error:</mark></p>
+<script src="https://gist.github.com/toamitkumar/1406558.js">
+</script>
+<p>This had happened because I had RSpec 1 way of including spec_helper (in old files):</p>
+<p><code>require File.expand_path(File.dirname(__FILE__) + ‘/../spec_helper’)</code></p>
+<p>And the other way (in my new files):</p>
+<p><code>require ‘spec_helper’</code></p>
+<p>Synching them fixed it :))</p>
+</div>]]></content:encoded></item><item><title><![CDATA[! No Such App as Radiant-cloud-8241. (Heruko)]]></title><description><![CDATA[<div class="kg-card-markdown"><p>While pushing my rails application on heroku I stumbled across a weird error.</p>
+<p>Here are the steps:</p>
+<script src="https://gist.github.com/toamitkumar/1396478.js">
+</script>
+<p>To look into details of the error, lets dig deep. Below are the steps I followed to resolve the issue.</p>
+<script src="https://gist.github.com/toamitkumar/1396489.js">
+</script></div>]]></description><link>https://toamitkumar.com/2011/11/26/no-such-app-as-radiant-cloud-8241-heruko/</link><guid isPermaLink="false">5a75b88c8f4cf0346625e94f</guid><category><![CDATA[rubyonrails]]></category><category><![CDATA[ruby]]></category><category><![CDATA[heroku]]></category><dc:creator><![CDATA[Amit Kumar]]></dc:creator><pubDate>Sat, 26 Nov 2011 13:26:00 GMT</pubDate><content:encoded><![CDATA[<div class="kg-card-markdown"><p>While pushing my rails application on heroku I stumbled across a weird error.</p>
+<p>Here are the steps:</p>
+<script src="https://gist.github.com/toamitkumar/1396478.js">
+</script>
+<p>To look into details of the error, lets dig deep. Below are the steps I followed to resolve the issue.</p>
+<script src="https://gist.github.com/toamitkumar/1396489.js">
+</script></div>]]></content:encoded></item><item><title><![CDATA[Big Data Enterprisey Analytics and Ruby]]></title><description><![CDATA[<div class="kg-card-markdown"><p>I had the lifetime opprotunity to <a href="http://lanyrd.com/2011/rubyconf/schedule/">speak</a> after Matz's (creator of ruby) keynote in New Orleans.</p>
+<p><strong>Video of my talk:</strong></p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/DaSqQlEZdA0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen>
+</iframe>
+<p><strong>And slides:</strong></p>
+<script async class="speakerdeck-embed" data-id="4e868e826ea0ae0050000461" data-ratio="1.2994923857868" src="//speakerdeck.com/assets/embed.js">
+</script>
+</div>]]></description><link>https://toamitkumar.com/2011/09/30/big-data-enterprisey-analytics-and-ruby/</link><guid isPermaLink="false">5a75b4878f4cf0346625e944</guid><category><![CDATA[ruby]]></category><category><![CDATA[ruby-conference]]></category><category><![CDATA[rubyonrails]]></category><category><![CDATA[analytics]]></category><category><![CDATA[big-data]]></category><category><![CDATA[big-data-ruby]]></category><dc:creator><![CDATA[Amit Kumar]]></dc:creator><pubDate>Fri, 30 Sep 2011 13:09:00 GMT</pubDate><content:encoded><![CDATA[<div class="kg-card-markdown"><p>I had the lifetime opprotunity to <a href="http://lanyrd.com/2011/rubyconf/schedule/">speak</a> after Matz's (creator of ruby) keynote in New Orleans.</p>
+<p><strong>Video of my talk:</strong></p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/DaSqQlEZdA0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen>
+</iframe>
+<p><strong>And slides:</strong></p>
+<script async class="speakerdeck-embed" data-id="4e868e826ea0ae0050000461" data-ratio="1.2994923857868" src="//speakerdeck.com/assets/embed.js">
+</script>
+</div>]]></content:encoded></item><item><title><![CDATA[Creating fancy Org Chart with Javascript]]></title><description><![CDATA[<div class="kg-card-markdown"><p>Just released code to create inverted Organization Chart –&gt; <a href="https://github.com/toamitkumar/org_chart">library here</a></p>
+<p><img src="https://toamitkumar.com/content/images/2018/02/org_chart1.png" alt="org_chart1"></p>
+<p><img src="https://toamitkumar.com/content/images/2018/02/org_chart_menu.png" alt="org_chart_menu"></p>
+</div>]]></description><link>https://toamitkumar.com/2011/09/16/creating-fancy-org-chart-with-javascript/</link><guid isPermaLink="false">5a7503c38f4cf0346625e938</guid><category><![CDATA[javascript]]></category><category><![CDATA[org-chart]]></category><category><![CDATA[inverted-org-chart]]></category><dc:creator><![CDATA[Amit Kumar]]></dc:creator><pubDate>Fri, 16 Sep 2011 00:35:00 GMT</pubDate><content:encoded><![CDATA[<div class="kg-card-markdown"><p>Just released code to create inverted Organization Chart –&gt; <a href="https://github.com/toamitkumar/org_chart">library here</a></p>
+<p><img src="https://toamitkumar.com/content/images/2018/02/org_chart1.png" alt="org_chart1"></p>
+<p><img src="https://toamitkumar.com/content/images/2018/02/org_chart_menu.png" alt="org_chart_menu"></p>
+</div>]]></content:encoded></item><item><title><![CDATA[Inspect Rails 3 Routes in 'Console']]></title><description><![CDATA[<div class="kg-card-markdown"><script src="https://gist.github.com/toamitkumar/952211.js">
+</script></div>]]></description><link>https://toamitkumar.com/2011/07/31/inspect-rails-3-routes-in-console/</link><guid isPermaLink="false">5a7447ec8f4cf0346625e8fb</guid><category><![CDATA[rubyonrails]]></category><category><![CDATA[rails3]]></category><category><![CDATA[rails-routes]]></category><category><![CDATA[rails-console]]></category><dc:creator><![CDATA[Amit Kumar]]></dc:creator><pubDate>Sun, 31 Jul 2011 11:13:00 GMT</pubDate><content:encoded><![CDATA[<div class="kg-card-markdown"><script src="https://gist.github.com/toamitkumar/952211.js">
+</script></div>]]></content:encoded></item><item><title><![CDATA[Recursively Delete .svn Directories - Linux]]></title><description><![CDATA[<div class="kg-card-markdown"><script src="https://gist.github.com/toamitkumar/925831.js">
+</script></div>]]></description><link>https://toamitkumar.com/2011/07/28/recursively-delete-svn-directories-linux/</link><guid isPermaLink="false">5a7446ad8f4cf0346625e8f0</guid><category><![CDATA[unix]]></category><category><![CDATA[recursive-delete]]></category><dc:creator><![CDATA[Amit Kumar]]></dc:creator><pubDate>Thu, 28 Jul 2011 11:08:00 GMT</pubDate><content:encoded><![CDATA[<div class="kg-card-markdown"><script src="https://gist.github.com/toamitkumar/925831.js">
+</script></div>]]></content:encoded></item><item><title><![CDATA[Connecting to SQL Server From Linux/Suse/Snow Leopard]]></title><description><![CDATA[<div class="kg-card-markdown"><p><a href="http://www.engineyard.com/blog/author/kencollins/">Ken Collins</a> from EngineYard released <a href="https://github.com/rails-sqlserver/tiny_tds">TinyTds</a>, a ruby gem that uses dblib to connect to MS SQL server. It has no hassles of managing ODBC connection.  Read the <a href="http://www.engineyard.com/blog/2011/modern-sql-server-rails/">blog</a> for detailed explanation.</p>
+<p>Before TinyTDS:</p>
+<p>The steps for setting libraries to connect to MS SQL on *nix environment. Follow the steps</p></div>]]></description><link>https://toamitkumar.com/2011/07/05/connecting-to-sql-server-from-linux-suse-snow-leopard/</link><guid isPermaLink="false">5a7444988f4cf0346625e8e5</guid><category><![CDATA[rubyonrails]]></category><category><![CDATA[ruby]]></category><category><![CDATA[rubygems]]></category><category><![CDATA[tinytds]]></category><category><![CDATA[tds]]></category><category><![CDATA[odbc]]></category><category><![CDATA[OSX]]></category><dc:creator><![CDATA[Amit Kumar]]></dc:creator><pubDate>Tue, 05 Jul 2011 10:59:00 GMT</pubDate><content:encoded><![CDATA[<div class="kg-card-markdown"><p><a href="http://www.engineyard.com/blog/author/kencollins/">Ken Collins</a> from EngineYard released <a href="https://github.com/rails-sqlserver/tiny_tds">TinyTds</a>, a ruby gem that uses dblib to connect to MS SQL server. It has no hassles of managing ODBC connection.  Read the <a href="http://www.engineyard.com/blog/2011/modern-sql-server-rails/">blog</a> for detailed explanation.</p>
+<p>Before TinyTDS:</p>
+<p>The steps for setting libraries to connect to MS SQL on *nix environment. Follow the steps religiously to succeed.</p>
+<script src="https://gist.github.com/toamitkumar/914901.js">
+</script>
+<p><strong>Enter TinyTDS:</strong></p>
+<p>TinyTDS helps ODBC-less connection which means no pain of installing all the ODBC libraries. It took a min to set-up the connection using the steps.</p>
+<script src="https://gist.github.com/toamitkumar/914923.js">
+</script>
+<p><strong>Goodies: Steps on Mac OSx Snow Leopard</strong></p>
+<script src="https://gist.github.com/toamitkumar/914928.js">
+</script></div>]]></content:encoded></item></channel></rss>
